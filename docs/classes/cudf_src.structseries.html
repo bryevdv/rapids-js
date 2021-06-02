@@ -117,12 +117,16 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#_symbol_iterator_" class="tsd-kind-icon">[<wbr>Symbol.iterator]</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="cudf_src.structseries.html#cast" class="tsd-kind-icon">cast</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="cudf_src.structseries.html#concat" class="tsd-kind-icon">concat</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#countnonnulls" class="tsd-kind-icon">count<wbr>Non<wbr>Nulls</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#dropduplicates" class="tsd-kind-icon">drop<wbr>Duplicates</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#dropnulls" class="tsd-kind-icon">drop<wbr>Nulls</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="cudf_src.structseries.html#encodelabels" class="tsd-kind-icon">encode<wbr>Labels</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#fill" class="tsd-kind-icon">fill</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#fillinplace" class="tsd-kind-icon">fill<wbr>InPlace</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#filter" class="tsd-kind-icon">filter</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited"><a href="cudf_src.structseries.html#gather" class="tsd-kind-icon">gather</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="cudf_src.structseries.html#getchild" class="tsd-kind-icon">get<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#head" class="tsd-kind-icon">head</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#isnotnull" class="tsd-kind-icon">is<wbr>Not<wbr>Null</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#isnull" class="tsd-kind-icon">is<wbr>Null</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#orderby" class="tsd-kind-icon">order<wbr>By</a></li>
@@ -133,9 +137,10 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#setnullmask" class="tsd-kind-icon">set<wbr>Null<wbr>Mask</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#setvalues" class="tsd-kind-icon">set<wbr>Values</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#sortvalues" class="tsd-kind-icon">sort<wbr>Values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#tail" class="tsd-kind-icon">tail</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#toarrow" class="tsd-kind-icon">to<wbr>Arrow</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#unique" class="tsd-kind-icon">unique</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#value_counts" class="tsd-kind-icon">value_<wbr>counts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="cudf_src.structseries.html#valuecounts" class="tsd-kind-icon">value<wbr>Counts</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="cudf_src.structseries.html#new" class="tsd-kind-icon">new</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static"><a href="cudf_src.structseries.html#sequence" class="tsd-kind-icon">sequence</a></li>
 							</ul>
@@ -155,7 +160,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L343">modules/cudf/src/series.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L379">modules/cudf/src/series.ts:379</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -177,7 +182,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L333">modules/cudf/src/series.ts:333</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L369">modules/cudf/src/series.ts:369</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -199,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L323">modules/cudf/src/series.ts:323</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L359">modules/cudf/src/series.ts:359</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -221,7 +226,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L348">modules/cudf/src/series.ts:348</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L384">modules/cudf/src/series.ts:384</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +248,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L338">modules/cudf/src/series.ts:338</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L374">modules/cudf/src/series.ts:374</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,7 +270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L353">modules/cudf/src/series.ts:353</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L389">modules/cudf/src/series.ts:389</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -287,7 +292,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L328">modules/cudf/src/series.ts:328</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L364">modules/cudf/src/series.ts:364</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -309,7 +314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L318">modules/cudf/src/series.ts:318</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L354">modules/cudf/src/series.ts:354</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -335,7 +340,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.__@iterator</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L642">modules/cudf/src/series.ts:642</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L795">modules/cudf/src/series.ts:795</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,7 +362,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series/struct.ts#L36">modules/cudf/src/series/struct.ts:36</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series/struct.ts#L36">modules/cudf/src/series/struct.ts:36</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -368,7 +373,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>R<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#floatingpoint" class="tsd-signature-type" data-tsd-kind="Type alias">FloatingPoint</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.list.html" class="tsd-signature-type" data-tsd-kind="Class">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.struct.html" class="tsd-signature-type" data-tsd-kind="Class">Struct</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>R<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#floatingpoint" class="tsd-signature-type" data-tsd-kind="Type alias">FloatingPoint</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.list.html" class="tsd-signature-type" data-tsd-kind="Class">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.struct.html" class="tsd-signature-type" data-tsd-kind="Class">Struct</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#timestamp" class="tsd-signature-type" data-tsd-kind="Type alias">Timestamp</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.categorical.html" class="tsd-signature-type" data-tsd-kind="Class">Categorical</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -398,7 +403,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series/struct.ts#L75">modules/cudf/src/series/struct.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series/struct.ts#L75">modules/cudf/src/series/struct.ts:75</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,6 +428,109 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="countnonnulls" class="tsd-anchor"></a>
+					<h3>count<wbr>Non<wbr>Nulls</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">count<wbr>Non<wbr>Nulls<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.countNonNulls</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L404">modules/cudf/src/series.ts:404</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Return the number of non-null elements in the Series.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]).</span><span style="color: #795E26">countNonNulls</span><span style="color: #000000">(); </span><span style="color: #008000">// 3</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]).</span><span style="color: #795E26">countNonNulls</span><span style="color: #000000">(); </span><span style="color: #008000">// 2</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The number of non-null elements</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="dropduplicates" class="tsd-anchor"></a>
+					<h3>drop<wbr>Duplicates</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Duplicates<span class="tsd-signature-symbol">(</span>keep<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, nullsEqual<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, nullsFirst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, memoryResource<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">MemoryResource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.dropDuplicates</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L1062">modules/cudf/src/series.ts:1062</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns a new Series with duplicate values from the original removed</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// Float64Series</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">4</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">]).</span><span style="color: #795E26">dropDuplicates</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">true</span>
+<span style="color: #000000">) </span><span style="color: #008000">// [null, 1, 2, 3, 4]</span>
+
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">4</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">]).</span><span style="color: #795E26">dropDuplicates</span><span style="color: #000000">(</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">false</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">true</span>
+<span style="color: #000000">) </span><span style="color: #008000">// [1, 2, 3]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>keep: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Determines whether or not to keep the duplicate items.</p>
+									</div>
+								</li>
+								<li>
+									<h5>nullsEqual: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Determines whether nulls are handled as equal values.</p>
+									</div>
+								</li>
+								<li>
+									<h5>nullsFirst: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Determines whether null values are inserted before or after non-null values.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> memoryResource: <span class="tsd-signature-type">MemoryResource</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Memory resource used to allocate the result Column&#39;s device memory.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<p>series without duplicate values</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="dropnulls" class="tsd-anchor"></a>
 					<h3>drop<wbr>Nulls</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -433,7 +541,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.dropNulls</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L834">modules/cudf/src/series.ts:834</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L988">modules/cudf/src/series.ts:988</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -476,6 +584,66 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+					<a name="encodelabels" class="tsd-anchor"></a>
+					<h3>encode<wbr>Labels</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">encode<wbr>Labels&lt;R&gt;<span class="tsd-signature-symbol">(</span>categories<span class="tsd-signature-symbol">?: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span>, type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">R</span>, nullSentinel<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;scalarType&quot;</span><span class="tsd-signature-symbol">]</span>, memoryResource<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">MemoryResource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#series-1" class="tsd-signature-type" data-tsd-kind="Variable">Series</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.encodeLabels</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L419">modules/cudf/src/series.ts:419</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Encode the Series values into integer labels.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>R<span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a> = <a href="cudf_src.int32.html" class="tsd-signature-type" data-tsd-kind="Class">Int32</a></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>categories: <a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The optional Series of values to encode into integers. Defaults to the unique
+										elements in this Series.</p>
+									</div>
+								</li>
+								<li>
+									<h5>type: <span class="tsd-signature-type">R</span><span class="tsd-signature-symbol"> = ...</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The optional integer DataType to use for the returned Series. Defaults to Int32.</p>
+									</div>
+								</li>
+								<li>
+									<h5>nullSentinel: <span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">&quot;scalarType&quot;</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> = -1</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The optional value used to indicate missing category. Defaults to -1.</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> memoryResource: <span class="tsd-signature-type">MemoryResource</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The optional MemoryResource used to allocate the result Column&#39;s device
+										memory.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/cudf_src.html#series-1" class="tsd-signature-type" data-tsd-kind="Variable">Series</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">R</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>A sequence of encoded integer labels with values between <code>0</code> and <code>n-1</code> categories, and
+							<code>nullSentinel</code> for any null values</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="fill" class="tsd-anchor"></a>
 					<h3>fill</h3>
@@ -487,7 +655,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.fill</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L376">modules/cudf/src/series.ts:376</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L480">modules/cudf/src/series.ts:480</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -551,7 +719,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.fillInPlace</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L400">modules/cudf/src/series.ts:400</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L504">modules/cudf/src/series.ts:504</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -608,7 +776,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.filter</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L616">modules/cudf/src/series.ts:616</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L769">modules/cudf/src/series.ts:769</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -655,7 +823,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.gather</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L523">modules/cudf/src/series.ts:523</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L627">modules/cudf/src/series.ts:627</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -707,7 +875,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series/struct.ts#L65">modules/cudf/src/series/struct.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series/struct.ts#L65">modules/cudf/src/series/struct.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -754,6 +922,51 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="head" class="tsd-anchor"></a>
+					<h3>head</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">head<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.head</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L648">modules/cudf/src/series.ts:648</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the first n rows.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">a</span><span style="color: #000000"> = </span><span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">4</span><span style="color: #000000">, </span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">b</span><span style="color: #000000"> = </span><span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;foo&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;bar&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;test&quot;</span><span style="color: #000000">]);</span>
+
+<span style="color: #001080">a</span><span style="color: #000000">.</span><span style="color: #795E26">head</span><span style="color: #000000">(); </span><span style="color: #008000">// [4, 6, 8, 10, 12]</span>
+<span style="color: #001080">b</span><span style="color: #000000">.</span><span style="color: #795E26">head</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">); </span><span style="color: #008000">// [&quot;foo&quot;]</span>
+<span style="color: #001080">a</span><span style="color: #000000">.</span><span style="color: #795E26">head</span><span style="color: #000000">(-</span><span style="color: #098658">1</span><span style="color: #000000">); </span><span style="color: #008000">// throws index out of bounds error</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of rows to return.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="isnotnull" class="tsd-anchor"></a>
 					<h3>is<wbr>Not<wbr>Null</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
@@ -764,7 +977,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.isNotNull</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L805">modules/cudf/src/series.ts:805</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L959">modules/cudf/src/series.ts:959</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -812,7 +1025,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.isNull</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L783">modules/cudf/src/series.ts:783</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L937">modules/cudf/src/series.ts:937</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -853,14 +1066,14 @@
 					<a name="orderby" class="tsd-anchor"></a>
 					<h3>order<wbr>By</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">order<wbr>By<span class="tsd-signature-symbol">(</span>ascending<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, null_order<span class="tsd-signature-symbol">?: </span><a href="../enums/cudf_src.nullorder.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NullOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.int32series.html" class="tsd-signature-type" data-tsd-kind="Class">Int32Series</a></li>
+						<li class="tsd-signature tsd-kind-icon">order<wbr>By<span class="tsd-signature-symbol">(</span>ascending<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, null_order<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">&quot;after&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;before&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.int32series.html" class="tsd-signature-type" data-tsd-kind="Class">Int32Series</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Series.orderBy</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L720">modules/cudf/src/series.ts:720</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L873">modules/cudf/src/series.ts:873</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -884,8 +1097,8 @@
 <span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #0000FF">true</span><span style="color: #000000">, </span><span style="color: #0000FF">false</span><span style="color: #000000">]).</span><span style="color: #795E26">orderBy</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">) </span><span style="color: #008000">// [0, 2, 3, 1, 4]</span>
 
 <span style="color: #008000">// NullOrder usage</span>
-<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">orderBy</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #001080">NullOrder</span><span style="color: #000000">.</span><span style="color: #0070C1">BEFORE</span><span style="color: #000000">) </span><span style="color: #008000">// [0, 1, 2, 3, 4, 5]</span>
-<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">orderBy</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #001080">NullOrder</span><span style="color: #000000">.</span><span style="color: #0070C1">AFTER</span><span style="color: #000000">) </span><span style="color: #008000">// [5, 0, 1, 2, 3, 4]</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">orderBy</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;before&#039;</span><span style="color: #000000">) </span><span style="color: #008000">// [0, 1, 2, 3, 4, 5]</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">orderBy</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;after&#039;</span><span style="color: #000000">) </span><span style="color: #008000">// [5, 0, 1, 2, 3, 4]</span>
 </code></pre>
 									</dd>
 								</dl>
@@ -899,7 +1112,7 @@
 									</div>
 								</li>
 								<li>
-									<h5>null_order: <a href="../enums/cudf_src.nullorder.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NullOrder</a><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>null_order: <span class="tsd-signature-type">&quot;after&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;before&quot;</span><span class="tsd-signature-symbol"> = &#x27;after&#x27;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>whether nulls should sort before or after other values</p>
 									</div>
@@ -922,7 +1135,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.replaceNulls</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L424">modules/cudf/src/series.ts:424</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L528">modules/cudf/src/series.ts:528</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -965,7 +1178,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.replaceNulls</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L447">modules/cudf/src/series.ts:447</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L551">modules/cudf/src/series.ts:551</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1019,7 +1232,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.replaceNullsFollowing</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L477">modules/cudf/src/series.ts:477</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L581">modules/cudf/src/series.ts:581</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1066,7 +1279,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.replaceNullsPreceding</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L500">modules/cudf/src/series.ts:500</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L604">modules/cudf/src/series.ts:604</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1114,7 +1327,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.scatter</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L549">modules/cudf/src/series.ts:549</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L702">modules/cudf/src/series.ts:702</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1170,7 +1383,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.scatter</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L575">modules/cudf/src/series.ts:575</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L728">modules/cudf/src/series.ts:728</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1232,7 +1445,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.setNullMask</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L656">modules/cudf/src/series.ts:656</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L809">modules/cudf/src/series.ts:809</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1269,7 +1482,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.setValues</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L635">modules/cudf/src/series.ts:635</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L788">modules/cudf/src/series.ts:788</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1312,14 +1525,14 @@
 					<a name="sortvalues" class="tsd-anchor"></a>
 					<h3>sort<wbr>Values</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">sort<wbr>Values<span class="tsd-signature-symbol">(</span>ascending<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, null_order<span class="tsd-signature-symbol">?: </span><a href="../enums/cudf_src.nullorder.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NullOrder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">sort<wbr>Values<span class="tsd-signature-symbol">(</span>ascending<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, null_order<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">&quot;after&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;before&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Series.sortValues</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L760">modules/cudf/src/series.ts:760</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L914">modules/cudf/src/series.ts:914</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1345,10 +1558,10 @@
 <span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #0000FF">false</span><span style="color: #000000">]</span>
 
 <span style="color: #008000">// NullOrder usage</span>
-<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">sortValues</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #001080">NullOrder</span><span style="color: #000000">.</span><span style="color: #0070C1">BEFORE</span><span style="color: #000000">) </span><span style="color: #008000">// [50, 40, 30, 20,</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">sortValues</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;before&#039;</span><span style="color: #000000">) </span><span style="color: #008000">// [50, 40, 30, 20,</span>
 <span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]</span>
 
-<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">sortValues</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #001080">NullOrder</span><span style="color: #000000">.</span><span style="color: #0070C1">AFTER</span><span style="color: #000000">) </span><span style="color: #008000">// [null, 50, 40, 30,</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">50</span><span style="color: #000000">, </span><span style="color: #098658">40</span><span style="color: #000000">, </span><span style="color: #098658">30</span><span style="color: #000000">, </span><span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">]).</span><span style="color: #795E26">sortValues</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">, </span><span style="color: #A31515">&#039;after&#039;</span><span style="color: #000000">) </span><span style="color: #008000">// [null, 50, 40, 30,</span>
 <span style="color: #098658">20</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">]</span>
 </code></pre>
 									</dd>
@@ -1364,15 +1577,60 @@
 									</div>
 								</li>
 								<li>
-									<h5>null_order: <a href="../enums/cudf_src.nullorder.html" class="tsd-signature-type" data-tsd-kind="Enumeration">NullOrder</a><span class="tsd-signature-symbol"> = ...</span></h5>
+									<h5>null_order: <span class="tsd-signature-type">&quot;after&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;before&quot;</span><span class="tsd-signature-symbol"> = &#x27;after&#x27;</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>whether nulls should sort before or after other values
-										Default: BEFORE</p>
+										Default: before</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>Sorted values</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="tail" class="tsd-anchor"></a>
+					<h3>tail</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">tail<span class="tsd-signature-symbol">(</span>n<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.tail</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L672">modules/cudf/src/series.ts:672</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the last n rows.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">a</span><span style="color: #000000"> = </span><span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #098658">4</span><span style="color: #000000">, </span><span style="color: #098658">6</span><span style="color: #000000">, </span><span style="color: #098658">8</span><span style="color: #000000">, </span><span style="color: #098658">10</span><span style="color: #000000">, </span><span style="color: #098658">12</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">b</span><span style="color: #000000"> = </span><span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #A31515">&quot;foo&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;bar&quot;</span><span style="color: #000000">, </span><span style="color: #A31515">&quot;test&quot;</span><span style="color: #000000">]);</span>
+
+<span style="color: #001080">a</span><span style="color: #000000">.</span><span style="color: #795E26">tail</span><span style="color: #000000">(); </span><span style="color: #008000">// [8, 10, 12, 1, 2]</span>
+<span style="color: #001080">b</span><span style="color: #000000">.</span><span style="color: #795E26">tail</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">); </span><span style="color: #008000">// [&quot;test&quot;]</span>
+<span style="color: #001080">a</span><span style="color: #000000">.</span><span style="color: #795E26">tail</span><span style="color: #000000">(-</span><span style="color: #098658">1</span><span style="color: #000000">); </span><span style="color: #008000">// throws index out of bounds error</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>n: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 5</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of rows to return.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -1387,7 +1645,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.toArrow</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L661">modules/cudf/src/series.ts:661</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L814">modules/cudf/src/series.ts:814</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1403,20 +1661,30 @@
 					<a name="unique" class="tsd-anchor"></a>
 					<h3>unique</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">unique<span class="tsd-signature-symbol">(</span>nullsEqual<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, memoryResource<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">MemoryResource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">unique<span class="tsd-signature-symbol">(</span>nullsEqual<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span>, memoryResource<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">MemoryResource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Series.unique</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L868">modules/cudf/src/series.ts:868</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L1031">modules/cudf/src/series.ts:1031</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Removes duplicate values from the Series.</p>
+									<p>Returns a new Series with only the unique values that were found in the original</p>
 								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// Float64Series</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]).</span><span style="color: #795E26">unique</span><span style="color: #000000">(</span><span style="color: #0000FF">true</span><span style="color: #000000">) </span><span style="color: #008000">// [null, 1, 2, 3]</span>
+<span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #0000FF">null</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]).</span><span style="color: #795E26">unique</span><span style="color: #000000">(</span><span style="color: #0000FF">false</span><span style="color: #000000">) </span><span style="color: #008000">// [null, null, 1, 2, 3]</span>
+</code></pre>
+									</dd>
+								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
@@ -1433,23 +1701,23 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
 							<p>series without duplicate values</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-					<a name="value_counts" class="tsd-anchor"></a>
-					<h3>value_<wbr>counts</h3>
+					<a name="valuecounts" class="tsd-anchor"></a>
+					<h3>value<wbr>Counts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">value_<wbr>counts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>count<span class="tsd-signature-symbol">: </span><a href="cudf_src.int32series.html" class="tsd-signature-type" data-tsd-kind="Class">Int32Series</a><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
+						<li class="tsd-signature tsd-kind-icon">value<wbr>Counts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>count<span class="tsd-signature-symbol">: </span><a href="cudf_src.int32series.html" class="tsd-signature-type" data-tsd-kind="Class">Int32Series</a><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><a href="cudf_src.structseries.html" class="tsd-signature-type" data-tsd-kind="Class">StructSeries</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from Series.value_counts</p>
+								<p>Inherited from Series.valueCounts</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L849">modules/cudf/src/series.ts:849</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L1003">modules/cudf/src/series.ts:1003</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1482,17 +1750,19 @@
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.float64series.html" class="tsd-signature-type" data-tsd-kind="Class">Float64Series</a></li>
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.int64series.html" class="tsd-signature-type" data-tsd-kind="Class">Int64Series</a></li>
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.bool8series.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8Series</a></li>
+						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TimestampMillisecondSeries</span></li>
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.float64.html" class="tsd-signature-type" data-tsd-kind="Class">Float64</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol">&gt;</span></li>
 						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">new<span class="tsd-signature-symbol">(</span>input<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.timestampmillisecond.html" class="tsd-signature-type" data-tsd-kind="Class">TimestampMillisecond</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L179">modules/cudf/src/series.ts:179</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L188">modules/cudf/src/series.ts:188</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1550,7 +1820,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L194">modules/cudf/src/series.ts:194</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L203">modules/cudf/src/series.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1573,7 +1843,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#floatingpoint" class="tsd-signature-type" data-tsd-kind="Type alias">FloatingPoint</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.list.html" class="tsd-signature-type" data-tsd-kind="Class">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.struct.html" class="tsd-signature-type" data-tsd-kind="Class">Struct</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#floatingpoint" class="tsd-signature-type" data-tsd-kind="Type alias">FloatingPoint</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.list.html" class="tsd-signature-type" data-tsd-kind="Class">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="cudf_src.struct.html" class="tsd-signature-type" data-tsd-kind="Class">Struct</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#timestamp" class="tsd-signature-type" data-tsd-kind="Type alias">Timestamp</a><span class="tsd-signature-symbol"> | </span><a href="cudf_src.categorical.html" class="tsd-signature-type" data-tsd-kind="Class">Categorical</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1588,7 +1858,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L206">modules/cudf/src/series.ts:206</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L215">modules/cudf/src/series.ts:215</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1617,7 +1887,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L218">modules/cudf/src/series.ts:218</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L227">modules/cudf/src/series.ts:227</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1646,7 +1916,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L230">modules/cudf/src/series.ts:230</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L239">modules/cudf/src/series.ts:239</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1675,7 +1945,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L242">modules/cudf/src/series.ts:242</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L251">modules/cudf/src/series.ts:251</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1704,7 +1974,36 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L256">modules/cudf/src/series.ts:256</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L263">modules/cudf/src/series.ts:263</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new cudf.TimestampMillisecondSeries</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// TimestampMillisecondSeries [2021-05-13T00:00:00.000Z, null, 2021-05-13T00:00:00.000Z, null]</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">a</span><span style="color: #000000"> = </span><span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(), </span><span style="color: #0000FF">undefined</span><span style="color: #000000">, </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(), </span><span style="color: #0000FF">undefined</span><span style="color: #000000">]);</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TimestampMillisecondSeries</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.new</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L277">modules/cudf/src/series.ts:277</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1735,7 +2034,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L270">modules/cudf/src/series.ts:270</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L291">modules/cudf/src/series.ts:291</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1766,7 +2065,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L284">modules/cudf/src/series.ts:284</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L305">modules/cudf/src/series.ts:305</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1797,7 +2096,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.new</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L298">modules/cudf/src/series.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L319">modules/cudf/src/series.ts:319</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1824,6 +2123,37 @@
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from Series.new</p>
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L333">modules/cudf/src/series.ts:333</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Create a new cudf.ListSeries that contain cudf.TimestampMillisecondSeries elements.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>example</dt>
+									<dd><pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span><span style="color: #001080">Series</span><span style="color: #000000">} </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;@rapidsai/cudf&#039;</span><span style="color: #000000">;</span>
+
+<span style="color: #008000">// ListSeries [[2021-05-13T00:00:00.000Z, null], [null, 2021-05-13T00:00:00.000Z]]</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">a</span><span style="color: #000000"> = </span><span style="color: #001080">Series</span><span style="color: #000000">.</span><span style="color: #795E26">new</span><span style="color: #000000">([[</span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">(), </span><span style="color: #0000FF">undefined</span><span style="color: #000000">], [</span><span style="color: #0000FF">undefined</span><span style="color: #000000">, </span><span style="color: #0000FF">new</span><span style="color: #000000"> </span><span style="color: #267F99">Date</span><span style="color: #000000">()]]);</span>
+<span style="color: #001080">a</span><span style="color: #000000">.</span><span style="color: #795E26">getValue</span><span style="color: #000000">(</span><span style="color: #098658">0</span><span style="color: #000000">) </span><span style="color: #008000">// TimestampMillisecondSeries [2021-05-13T00:00:00.000Z, null]</span>
+<span style="color: #001080">a</span><span style="color: #000000">.</span><span style="color: #795E26">getValue</span><span style="color: #000000">(</span><span style="color: #098658">1</span><span style="color: #000000">) </span><span style="color: #008000">// TimestampMillisecondSeries [null, 2021-05-13T00:00:00.000Z]</span>
+</code></pre>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>input: <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="cudf_src.listseries.html" class="tsd-signature-type" data-tsd-kind="Class">ListSeries</a><span class="tsd-signature-symbol">&lt;</span><a href="cudf_src.timestampmillisecond.html" class="tsd-signature-type" data-tsd-kind="Class">TimestampMillisecond</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
@@ -1837,7 +2167,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from Series.sequence</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/series.ts#L682">modules/cudf/src/series.ts:682</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/series.ts#L835">modules/cudf/src/series.ts:835</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1950,7 +2280,16 @@
 								<a href="cudf_src.structseries.html#concat" class="tsd-kind-icon">concat</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="cudf_src.structseries.html#countnonnulls" class="tsd-kind-icon">count<wbr>Non<wbr>Nulls</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="cudf_src.structseries.html#dropduplicates" class="tsd-kind-icon">drop<wbr>Duplicates</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="cudf_src.structseries.html#dropnulls" class="tsd-kind-icon">drop<wbr>Nulls</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited">
+								<a href="cudf_src.structseries.html#encodelabels" class="tsd-kind-icon">encode<wbr>Labels</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="cudf_src.structseries.html#fill" class="tsd-kind-icon">fill</a>
@@ -1966,6 +2305,9 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
 								<a href="cudf_src.structseries.html#getchild" class="tsd-kind-icon">get<wbr>Child</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="cudf_src.structseries.html#head" class="tsd-kind-icon">head</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="cudf_src.structseries.html#isnotnull" class="tsd-kind-icon">is<wbr>Not<wbr>Null</a>
@@ -1998,13 +2340,16 @@
 								<a href="cudf_src.structseries.html#sortvalues" class="tsd-kind-icon">sort<wbr>Values</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="cudf_src.structseries.html#tail" class="tsd-kind-icon">tail</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="cudf_src.structseries.html#toarrow" class="tsd-kind-icon">to<wbr>Arrow</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="cudf_src.structseries.html#unique" class="tsd-kind-icon">unique</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
-								<a href="cudf_src.structseries.html#value_counts" class="tsd-kind-icon">value_<wbr>counts</a>
+								<a href="cudf_src.structseries.html#valuecounts" class="tsd-kind-icon">value<wbr>Counts</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter tsd-is-inherited tsd-is-static">
 								<a href="cudf_src.structseries.html#new" class="tsd-kind-icon">new</a>

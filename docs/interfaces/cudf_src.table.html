@@ -95,8 +95,9 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#drop_nans" class="tsd-kind-icon">drop_<wbr>nans</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#drop_nulls" class="tsd-kind-icon">drop_<wbr>nulls</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#dropduplicates" class="tsd-kind-icon">drop<wbr>Duplicates</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#dropnans" class="tsd-kind-icon">drop<wbr>Nans</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#dropnulls" class="tsd-kind-icon">drop<wbr>Nulls</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#gather" class="tsd-kind-icon">gather</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter"><a href="cudf_src.table.html#getcolumnbyindex" class="tsd-kind-icon">get<wbr>Column<wbr>ByIndex</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="cudf_src.table.html#orderby" class="tsd-kind-icon">order<wbr>By</a></li>
@@ -117,7 +118,7 @@
 					<div class="tsd-signature tsd-kind-icon">num<wbr>Columns<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L113">modules/cudf/src/table.ts:113</a></li>
+							<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L113">modules/cudf/src/table.ts:113</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -132,7 +133,7 @@
 					<div class="tsd-signature tsd-kind-icon">num<wbr>Rows<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L118">modules/cudf/src/table.ts:118</a></li>
+							<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L118">modules/cudf/src/table.ts:118</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -145,16 +146,51 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="drop_nans" class="tsd-anchor"></a>
-					<h3>drop_<wbr>nans</h3>
+					<a name="dropduplicates" class="tsd-anchor"></a>
+					<h3>drop<wbr>Duplicates</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">drop_<wbr>nans<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#table-1" class="tsd-signature-type" data-tsd-kind="Variable">Table</a></li>
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Duplicates<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, keep<span class="tsd-signature-symbol">: </span><a href="../enums/cudf_src.duplicatekeepoption.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DuplicateKeepOption</a>, nullsEqual<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, nullsFirst<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, memoryResource<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">MemoryResource</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#table-1" class="tsd-signature-type" data-tsd-kind="Variable">Table</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L185">modules/cudf/src/table.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L187">modules/cudf/src/table.ts:187</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>keys: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>keep: <a href="../enums/cudf_src.duplicatekeepoption.html" class="tsd-signature-type" data-tsd-kind="Enumeration">DuplicateKeepOption</a></h5>
+								</li>
+								<li>
+									<h5>nullsEqual: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>nullsFirst: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> memoryResource: <span class="tsd-signature-type">MemoryResource</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/cudf_src.html#table-1" class="tsd-signature-type" data-tsd-kind="Variable">Table</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="dropnans" class="tsd-anchor"></a>
+					<h3>drop<wbr>Nans</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Nans<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#table-1" class="tsd-signature-type" data-tsd-kind="Variable">Table</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L185">modules/cudf/src/table.ts:185</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -171,16 +207,16 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="drop_nulls" class="tsd-anchor"></a>
-					<h3>drop_<wbr>nulls</h3>
+					<a name="dropnulls" class="tsd-anchor"></a>
+					<h3>drop<wbr>Nulls</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">drop_<wbr>nulls<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#table-1" class="tsd-signature-type" data-tsd-kind="Variable">Table</a></li>
+						<li class="tsd-signature tsd-kind-icon">drop<wbr>Nulls<span class="tsd-signature-symbol">(</span>keys<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/cudf_src.html#table-1" class="tsd-signature-type" data-tsd-kind="Variable">Table</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L186">modules/cudf/src/table.ts:186</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L186">modules/cudf/src/table.ts:186</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -206,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L125">modules/cudf/src/table.ts:125</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L125">modules/cudf/src/table.ts:125</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -239,7 +275,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L164">modules/cudf/src/table.ts:164</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L164">modules/cudf/src/table.ts:164</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,7 +291,7 @@
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
 							<ul class="tsd-type-parameters">
 								<li>
-									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#floatingpoint" class="tsd-signature-type" data-tsd-kind="Type alias">FloatingPoint</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.list.html" class="tsd-signature-type" data-tsd-kind="Class">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.struct.html" class="tsd-signature-type" data-tsd-kind="Class">Struct</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <span class="tsd-signature-type">any</span></h4>
+									<h4>T<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span><a href="../modules/cudf_src.html#indextype" class="tsd-signature-type" data-tsd-kind="Type alias">IndexType</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.int64.html" class="tsd-signature-type" data-tsd-kind="Class">Int64</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.uint64.html" class="tsd-signature-type" data-tsd-kind="Class">Uint64</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#floatingpoint" class="tsd-signature-type" data-tsd-kind="Type alias">FloatingPoint</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.bool8.html" class="tsd-signature-type" data-tsd-kind="Class">Bool8</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.utf8string.html" class="tsd-signature-type" data-tsd-kind="Class">Utf8String</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.list.html" class="tsd-signature-type" data-tsd-kind="Class">List</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.struct.html" class="tsd-signature-type" data-tsd-kind="Class">Struct</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><a href="../modules/cudf_src.html#timestamp" class="tsd-signature-type" data-tsd-kind="Type alias">Timestamp</a><span class="tsd-signature-symbol"> | </span><a href="../classes/cudf_src.categorical.html" class="tsd-signature-type" data-tsd-kind="Class">Categorical</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <span class="tsd-signature-type">any</span></h4>
 								</li>
 							</ul>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -281,7 +317,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L176">modules/cudf/src/table.ts:176</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L176">modules/cudf/src/table.ts:176</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -321,7 +357,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L137">modules/cudf/src/table.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L137">modules/cudf/src/table.ts:137</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -378,7 +414,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L152">modules/cudf/src/table.ts:152</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L152">modules/cudf/src/table.ts:152</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -426,7 +462,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L177">modules/cudf/src/table.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L177">modules/cudf/src/table.ts:177</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -449,7 +485,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/cd4c084/modules/cudf/src/table.ts#L183">modules/cudf/src/table.ts:183</a></li>
+									<li>Defined in <a href="https://github.com/bryevdv/node-rapids/blob/2fc03f8/modules/cudf/src/table.ts#L183">modules/cudf/src/table.ts:183</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -518,10 +554,13 @@
 								<a href="cudf_src.table.html#numrows" class="tsd-kind-icon">num<wbr>Rows</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="cudf_src.table.html#drop_nans" class="tsd-kind-icon">drop_<wbr>nans</a>
+								<a href="cudf_src.table.html#dropduplicates" class="tsd-kind-icon">drop<wbr>Duplicates</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="cudf_src.table.html#drop_nulls" class="tsd-kind-icon">drop_<wbr>nulls</a>
+								<a href="cudf_src.table.html#dropnans" class="tsd-kind-icon">drop<wbr>Nans</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="cudf_src.table.html#dropnulls" class="tsd-kind-icon">drop<wbr>Nulls</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-interface">
 								<a href="cudf_src.table.html#gather" class="tsd-kind-icon">gather</a>
